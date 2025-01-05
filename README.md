@@ -1,4 +1,4 @@
-# Job-Board App
+# PataKazi (Job-Board App)
 
 This Laravel-based job-board application allows users to explore job postings, post new opportunities, and manage job listings. It features a responsive UI and supports job categorization and search functionality for enhanced user experience.
 
