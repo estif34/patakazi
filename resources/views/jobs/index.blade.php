@@ -9,7 +9,7 @@
                             Post a Job
                         </a>
                     @else
-                        <a href="{{ route('register') }}" class="w-full md:w-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
+                        <a href="{{ route('login') }}" class="w-full md:w-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
                             Post a Job
                         </a>
                     @endauth
