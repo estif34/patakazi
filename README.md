@@ -20,8 +20,8 @@ This Laravel-based job-board application allows users to explore job postings, p
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
-   cd <repository_directory>
+   git clone https://github.com/estif34/patakazi.git
+   cd patakazi
    ```
 2. Install dependencies:
    ```bash
