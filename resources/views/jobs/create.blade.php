@@ -59,7 +59,7 @@
                         </div>
 
                         <div class="mb-4">
-                            <label for="description" class="block text-gray-700 font-bold mb-2">Job Description</label>
+                            <label for="description" class="editor block text-gray-700 font-bold mb-2">Job Description</label>
                             <textarea name="description" id="description" rows="5"
                                       class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">{{ old('description') }}</textarea>
                             @error('description')
@@ -68,13 +68,15 @@
                         </div>
 
                         <div class="mb-6">
-                            <label for="requirements" class="block text-gray-700 font-bold mb-2">Requirements</label>
+                            <label for="requirements" class="editor block text-gray-700 font-bold mb-2">Requirements</label>
                             <textarea name="requirements" id="requirements" rows="5"
                                       class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">{{ old('requirements') }}</textarea>
                             @error('requirements')
                                 <p class="text-red-500 text-xs italic">{{ $message }}</p>
                             @enderror
                         </div>
+                        <!-- <textarea class="editor"></textarea> -->
+
 
                         <div class="flex items-center justify-end">
                             <button type="submit"
@@ -88,3 +90,13 @@
         </div>
     </div>
 </x-app-layout>
+<!-- <script>
+    // Initialize CKEditor for all textareas with class 'editor'
+    document.querySelectorAll('.editor').forEach((textarea) => {
+        ClassicEditor
+            .create(textarea)
+            .catch(error => {
+                console.error(error);
+            });
+    });
+</script> -->
