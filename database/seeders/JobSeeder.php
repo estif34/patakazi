@@ -23,15 +23,30 @@ class JobSeeder extends Seeder
             ]
         );
 
+        $factory = Job::factory();
+
         $categories = Category::all();
 
+        // Create jobs for each category
         foreach ($categories as $category) {
-            Job::factory()
-                ->count(5)
-                ->create([
+            // Get job titles specific to this category
+            $jobTitles = $factory->getJobTitlesForCategory($category->name);
+
+            // Create 3-5 jobs for each category
+            $numberOfJobs = rand(3, 5);
+            
+            // Randomly select job titles without repetition
+            $selectedTitles = collect($jobTitles)
+                ->random(min(count($jobTitles), $numberOfJobs))
+                ->all();
+
+            foreach ($selectedTitles as $title) {
+                Job::factory()->create([
+                    'title' => $title,
                     'category_id' => $category->id,
                     'user_id' => $user->id,
                 ]);
+            }
         }
     }
 }
