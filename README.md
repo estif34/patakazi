@@ -35,7 +35,7 @@ This Laravel-based job-board application allows users to explore job postings, p
    copy .env.example .env
    ```
    - Configure the .env file with your database and application settings.
-   
+
 4. Generate the application key:
    ```bash
    php artisan key:generate
@@ -52,7 +52,7 @@ This Laravel-based job-board application allows users to explore job postings, p
    - Test user credentials 
       - email: user@example.com
       - password: password
-   - Loggin in using the above account allows to alter/edit the seeded data (test job posts)
+   - Loggin in using the above account allows to alter/edit the seeded data (test job posts), or create new ones.
    
 7. Start the development server:
    ```bash
