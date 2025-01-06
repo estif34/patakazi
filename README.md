@@ -42,11 +42,21 @@ This Laravel-based job-board application allows users to explore job postings, p
    ```bash
    php artisan migrate
    ```
-6. Start the development server:
+6. Seed the database
+   - Generate test user and data to check functionality
+   ```bash
+   php artisan db:seed
+   ```
+   - Test user credentials 
+      - email: user@example.com
+      - password: password
+   - Loggin in using the above account allows to alter/edit the seeded data (test job posts)
+   
+7. Start the development server:
    ```bash
    php artisan serve
    ```
-7. Access the application at http://127.0.0.1:8000
+8. Access the application at http://127.0.0.1:8000
 
 ## External Libraries
  - Laravel Breeze: For authentication scaffolding.
