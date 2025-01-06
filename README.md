@@ -12,10 +12,11 @@ This Laravel-based job-board application allows users to explore job postings, p
 - **Responsive Design**: Fully functional on both desktop and mobile devices.
 
 ## Prerequisites
-- PHP (>= 8.0)
+- PHP (>= 8.2)
 - Composer
 - Laravel (>= 9.0)
 - A database (e.g., MySQL)
+- Node.js 
 
 ## Installation
 1. Clone the repository:
@@ -34,6 +35,7 @@ This Laravel-based job-board application allows users to explore job postings, p
    copy .env.example .env
    ```
    - Configure the .env file with your database and application settings.
+   
 4. Generate the application key:
    ```bash
    php artisan key:generate
