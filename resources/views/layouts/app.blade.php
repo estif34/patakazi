@@ -15,6 +15,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <!-- Include CKEditor via CDN -->
+        @livewireStyles
 
     </head>
     <body class="font-sans antialiased">
@@ -42,6 +43,7 @@
                 {{ $slot }}
             </main>
         </div>
+        @livewireScripts
     </body>
     <!-- Include TinyMCE from CDN -->
 </html>
