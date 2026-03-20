@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'PataKazi') }}</title>
+        <title class="color:gray; font-size:40px;">{{ config('app.name', 'PataKazi') }}</title>
         <!-- <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script> -->
 
         <!-- Fonts -->
