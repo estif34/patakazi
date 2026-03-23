@@ -71,3 +71,4 @@ This Laravel-based job-board application allows users to explore job postings, p
    
 
 
+
