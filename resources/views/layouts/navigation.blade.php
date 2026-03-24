@@ -54,8 +54,12 @@
                     </x-slot>
                 </x-dropdown>
                 @else
-                <x-nav-link :href="route('login')" class="text-sm text-gray-700 hover:text-gray-900">
-                    {{ __('Login') }}
+                <x-nav-link :href="route('login')" class=" text-sm text-gray-700 hover:text-gray-900 rounded-lg m-4 pt-1 pb-1 pr-4 pl-4 hover:bg-gray-100">
+                    {{ __('Sign in') }}
+                </x-nav-link>
+                
+                <x-nav-link :href="route('register')" class="text-sm text-gray-700  hover:text-gray-900 border border-gray-500 rounded-lg pt-1 pb-1 pr-4 pl-4 hover:bg-gray-100">
+                    {{ __('Sign up') }}
                 </x-nav-link>
                 @endauth
             </div>
