@@ -54,7 +54,7 @@
                     </x-slot>
                 </x-dropdown>
                 @else
-                <x-nav-link :href="route('login')" class=" text-sm text-gray-700 hover:text-gray-900 rounded-lg m-4 pt-1 pb-1 pr-4 pl-4 hover:bg-gray-100">
+                <x-nav-link :href="route('login')" class=" text-sm text-gray-700 hover:text-gray-900 border-0 rounded-lg m-4 pt-1 pb-1 pr-4 pl-4 hover:bg-gray-100">
                     {{ __('Sign in') }}
                 </x-nav-link>
                 
