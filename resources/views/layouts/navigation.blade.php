@@ -54,11 +54,11 @@
                     </x-slot>
                 </x-dropdown>
                 @else
-                <x-nav-link :href="route('login')" class=" text-sm text-gray-700 hover:text-gray-900 border-0 rounded-lg m-4 pt-1 pb-1 pr-4 pl-4 hover:bg-gray-100">
+                <x-nav-link variant="button" :href="route('login')" :active="true" class="m-4 border-white">
                     {{ __('Sign in') }}
                 </x-nav-link>
                 
-                <x-nav-link :href="route('register')" class="text-sm text-gray-700  hover:text-gray-900 border border-gray-500 rounded-lg pt-1 pb-1 pr-4 pl-4 hover:bg-gray-100">
+                <x-nav-link variant="button" :href="route('register')" class="text-sm text-gray-700  hover:text-gray-900 border border-gray-600 rounded-lg pt-1 pb-1 pr-4 pl-4 hover:bg-gray-100">
                     {{ __('Sign up') }}
                 </x-nav-link>
                 @endauth
