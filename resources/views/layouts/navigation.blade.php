@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="/">
-                        <b style="font-size: 40px; color:gray">PataKazi</b>
+                        <b style="font-size: 40px; color:gray hover:text-gray-800">PataKazi</b>
                     </a>
                 </div>
 
